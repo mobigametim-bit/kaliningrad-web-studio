@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="theme-color" content="#141414">
 <meta name="description" content="MY MOTION — дизайн-концепт сайта школы танцев в Калининграде. Направления, фотографии, атмосфера и контакты.">
-<title>MY MOTION — Dance Is A Feeling · Калининград</title>
+<title>MY MOTION — танцуй в своём ритме · Калининград</title>
 <style>
 :root{color-scheme:dark;--bg:#141414;--panel:#202020;--text:#f4f0e9;--muted:#bcb7ae;--line:#4e4b47;--coral:#ff644b;--lime:#dcf568;--cream:#eee5d6;font-family:Arial,"Helvetica Neue",Helvetica,system-ui,sans-serif}
 *,*::before,*::after{box-sizing:border-box}
@@ -123,6 +123,11 @@ h2{font-size:clamp(3.3rem,7.2vw,8rem);line-height:.88;letter-spacing:-.09em;text
 @media(prefers-reduced-motion:reduce){
 html{scroll-behavior:auto}.marquee div{animation:none}.action,.shot img{transition:none}
 }
+
+/* Русскоязычный наборный заголовок: ширина кириллицы учтена отдельно от латинского варианта. */
+.hero h1{font-size:clamp(3.9rem,7.6vw,8.3rem);letter-spacing:-.082em}
+@media(max-width:720px){.hero h1{font-size:clamp(3.1rem,12vw,6.5rem);line-height:.91}}
+@media(max-width:420px){.hero h1{font-size:clamp(2.85rem,12vw,3.8rem)}}
 </style>
 </head>
 <body>
@@ -135,13 +140,13 @@ html{scroll-behavior:auto}.marquee div{animation:none}.action,.shot img{transiti
 </header>
 <main id="top">
 <section class="hero container">
-<div class="hero-copy"><span class="eyebrow">Kaliningrad / Dance studio</span><h1>MOVE<br><span class="thin">YOUR</span><br><i>WAY.</i></h1>
+<div class="hero-copy"><span class="eyebrow">Калининград / студия танцев</span><h1>ТАНЦУЙ<br><span class="thin">В СВОЁМ</span><br><i>РИТМЕ.</i></h1>
 <p class="hero-lead">Хочешь танцевать? Начни с движения. В My Motion встречаются музыка, эмоции и люди, которым есть что выразить.</p>
 <a class="action" href="https://taplink.cc/mymotion39" target="_blank" rel="noopener noreferrer">Хочу танцевать <span aria-hidden="true">↗</span></a>
 <span class="hero-count">MY MOTION / танцы в Калининграде / 01</span></div>
-<div class="hero-visual"><img class="hero-photo main" src="assets/dance-223817.png" alt="Танцевальная пара на сцене" fetchpriority="high"><img class="hero-photo small" src="assets/dance-223428.png" alt="Танцевальная пара в силуэте"><div class="round-label">Feel<br>the<br>motion ↗</div></div>
+<div class="hero-visual"><img class="hero-photo main" src="assets/dance-223817.png" alt="Танцевальная пара на сцене" fetchpriority="high"><img class="hero-photo small" src="assets/dance-223428.png" alt="Танцевальная пара в силуэте"><div class="round-label">Свой<br>ритм<br>↗</div></div>
 </section>
-<div class="marquee" aria-hidden="true"><div>MY MOTION <span>✳</span> FEEL THE MUSIC <span>✳</span> KEEP MOVING <span>✳</span> MY MOTION <span>✳</span> FEEL THE MUSIC <span>✳</span> KEEP MOVING <span>✳</span></div></div>
+<div class="marquee" aria-hidden="true"><div>MY MOTION <span>✳</span> ЧУВСТВУЙ МУЗЫКУ <span>✳</span> ДВИГАЙСЯ СВОБОДНО <span>✳</span> MY MOTION <span>✳</span> ЧУВСТВУЙ МУЗЫКУ <span>✳</span> ДВИГАЙСЯ СВОБОДНО <span>✳</span></div></div>
 <section class="block container" id="about">
 <div class="about-grid"><div class="about-image"><img src="assets/dance-223737.png" alt="Танцевальная тренировка в зале" loading="lazy"></div>
 <div class="about-copy"><span class="overline">01 / О студии</span><h2>Твоё<br>тело.<br><em>Твой</em><br>ритм.</h2>
@@ -153,7 +158,7 @@ html{scroll-behavior:auto}.marquee div{animation:none}.action,.shot img{transiti
 <div class="direction-list">
 <div class="direction"><span class="num">01</span><h3>Хастл</h3><p>Парный танец и импровизация — движение, которое рождается в диалоге.</p><span class="symbol">↗</span></div>
 <div class="direction"><span class="num">02</span><h3>Контемп</h3><p>Пластика и свобода движения, внимание к телу и выразительности.</p><span class="symbol">↗</span></div>
-<div class="direction"><span class="num">03</span><h3>High heels</h3><p>Характер, линии и уверенность в каждом движении.</p><span class="symbol">↗</span></div>
+<div class="direction"><span class="num">03</span><h3>Танцы на каблуках</h3><p>Характер, линии и уверенность в каждом движении.</p><span class="symbol">↗</span></div>
 <div class="direction"><span class="num">04</span><h3>Вог</h3><p>Музыка, позы, стиль и яркая индивидуальная подача.</p><span class="symbol">↗</span></div>
 <div class="direction"><span class="num">05</span><h3>Свадебный танец</h3><p>Персональная история, рассказанная вдвоём без слов.</p><span class="symbol">↗</span></div>
 </div></div></section>
@@ -178,7 +183,7 @@ html{scroll-behavior:auto}.marquee div{animation:none}.action,.shot img{transiti
 <button class="shot " type="button" data-photo="assets/dance-213514.png" aria-label="Открыть фото 17"><img src="assets/dance-213514.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>17 / 17</span></button>
 </div></section>
 <section class="contact" id="contact"><div class="container contact-inner">
-<div><span class="section-index">05 / До встречи на паркете</span><h2>Твой ход.<br>Танцуй.</h2><p>Первое движение — написать в студию. Уточни направление, актуальное расписание и условия пробного занятия.</p><div class="contact-links"><a href="https://taplink.cc/mymotion39" target="_blank" rel="noopener noreferrer">Узнать о занятиях / Taplink <span aria-hidden="true">↗</span></a><a href="https://vk.com/mymotion39" target="_blank" rel="noopener noreferrer">Сообщество My Motion / VK <span aria-hidden="true">↗</span></a><a href="tel:+79062135617">Позвонить в студию <span aria-hidden="true">↗</span></a></div></div>
+<div><span class="section-index">05 / До встречи на паркете</span><h2>Твой ход.<br>Танцуй.</h2><p>Первое движение — написать в студию. Уточни направление, актуальное расписание и условия пробного занятия.</p><div class="contact-links"><a href="https://taplink.cc/mymotion39" target="_blank" rel="noopener noreferrer">Узнать о занятиях <span aria-hidden="true">↗</span></a><a href="https://vk.com/mymotion39" target="_blank" rel="noopener noreferrer">Сообщество MY MOTION во ВКонтакте <span aria-hidden="true">↗</span></a><a href="tel:+79062135617">Позвонить в студию <span aria-hidden="true">↗</span></a></div></div>
 <div class="contact-details"><strong>Калининград</strong>ул. Генерал-лейтенанта Озерова, 19 к2<br>2 этаж<br><br><a href="https://yandex.com/maps/org/my_motion/162038205021/" target="_blank" rel="noopener noreferrer">Смотреть на карте ↗</a><br><br><a href="tel:+79062135617">+7 (906) 213-56-17</a></div>
 </div></section>
 </main>
