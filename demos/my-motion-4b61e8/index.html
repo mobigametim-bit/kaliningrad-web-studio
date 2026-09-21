@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#141414">
+<meta name="description" content="MY MOTION — дизайн-концепт сайта школы танцев в Калининграде. Направления, фотографии, атмосфера и контакты.">
+<title>MY MOTION — Dance Is A Feeling · Калининград</title>
+<style>
+:root{color-scheme:dark;--bg:#141414;--panel:#202020;--text:#f4f0e9;--muted:#bcb7ae;--line:#4e4b47;--coral:#ff644b;--lime:#dcf568;--cream:#eee5d6;font-family:Arial,"Helvetica Neue",Helvetica,system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);min-width:320px;overflow-x:hidden}button,input{font:inherit}a{color:inherit;text-decoration:none}
+button{cursor:pointer}img{max-width:100%;display:block}a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offset:4px}
+::selection{background:var(--coral);color:#151515}
+.container{width:min(1450px,calc(100% - clamp(36px,7vw,144px)));margin-inline:auto}
+.noise{position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.11;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' opacity='.24' filter='url(%23n)'/%3E%3C/svg%3E")}
+.demo-ribbon{font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;text-align:center;background:var(--coral);color:#191515;font-weight:850}
+.topbar{height:76px;border-bottom:1px solid #ffffff2c;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:8px;font-size:24px;letter-spacing:-.08em;font-weight:950;line-height:.78}
+.brand-mark{width:32px;height:32px;border-radius:50%;background:var(--coral);color:#1c1412;display:grid;place-items:center;font-size:23px;transform:rotate(-22deg)}
+.nav{display:flex;gap:27px;color:#e5ded4;font-size:12px;text-transform:uppercase;letter-spacing:.07em;font-weight:800}
+.nav a:hover{color:var(--coral)}
+.outline-button{border:1px solid #bcb6ab;padding:12px 16px;border-radius:100px;text-transform:uppercase;font-size:11px;letter-spacing:.075em;font-weight:800;white-space:nowrap;transition:background .2s,color .2s}
+.outline-button:hover{background:var(--text);color:var(--bg)}
+.hero{position:relative;min-height:685px;display:grid;grid-template-columns:1.04fr .96fr;gap:24px;align-items:stretch;padding-top:50px;padding-bottom:66px}
+.hero::before{content:"";position:absolute;right:32%;top:20%;width:175px;height:175px;border:1px solid #ff644b5a;border-radius:50%;pointer-events:none}
+.eyebrow,.overline{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:850;color:var(--coral)}
+.hero-copy{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:30px 0 20px}
+.hero h1{font-size:clamp(4.5rem,8.7vw,10rem);letter-spacing:-.103em;line-height:.83;margin:36px 0 26px;text-transform:uppercase;font-weight:950;white-space:nowrap}
+.hero h1 i{font-style:normal;color:var(--coral)}.hero h1 .thin{font-weight:400;color:var(--cream)}
+.hero-lead{max-width:425px;font-size:clamp(15px,1.3vw,19px);line-height:1.65;color:#ccc4ba;margin:0 0 30px}
+.action{display:inline-flex;justify-content:center;align-items:center;gap:35px;background:var(--coral);color:#231915;font-size:12px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;padding:19px 26px;transition:transform .2s,background .2s}
+.action:hover{background:var(--lime);transform:translateY(-2px)}
+.action.alt{background:var(--lime)}.action.alt:hover{background:var(--coral)}
+.hero-visual{position:relative;min-height:540px;margin-left:-60px;isolation:isolate}
+.hero-photo{position:absolute;object-fit:cover;filter:saturate(.9)}
+.hero-photo.main{inset:0 0 40px 13%;height:calc(100% - 40px);width:87%;object-position:48% 46%;clip-path:polygon(7% 0,100% 0,100% 100%,0 100%,0 12%)}
+.hero-photo.small{width:38%;height:39%;object-position:center;left:0;bottom:0;border:9px solid var(--bg);filter:grayscale(1)}
+.round-label{position:absolute;right:-10px;bottom:11px;background:var(--lime);color:#111;width:132px;height:132px;border-radius:50%;display:grid;place-items:center;text-align:center;text-transform:uppercase;font-weight:900;font-size:12px;letter-spacing:.07em;line-height:1.3;transform:rotate(12deg);border:8px solid var(--bg)}
+.hero-count{margin-top:35px;font-size:10px;color:#a6a198;text-transform:uppercase;letter-spacing:.15em}
+.marquee{background:var(--lime);color:#191917;padding:15px 0;overflow:hidden;white-space:nowrap;transform:rotate(-.55deg);width:102%;margin-left:-1%}
+.marquee div{display:inline-block;min-width:200%;animation:scroll 35s linear infinite;font-size:clamp(16px,2vw,27px);font-weight:950;letter-spacing:-.035em;text-transform:uppercase}
+.marquee span{margin:0 25px;color:#f45e43}@keyframes scroll{to{transform:translateX(-50%)}}
+.block{padding-block:clamp(76px,9vw,130px)}
+.section-head{display:flex;align-items:start;justify-content:space-between;gap:28px;margin-bottom:33px}
+.section-index{font-size:12px;font-weight:900;color:var(--coral);letter-spacing:.15em;text-transform:uppercase}
+h2{font-size:clamp(3.3rem,7.2vw,8rem);line-height:.88;letter-spacing:-.09em;text-transform:uppercase;margin:17px 0 0;font-weight:950}
+.section-head p{align-self:end;font-size:15px;line-height:1.65;color:#c8c2b9;max-width:330px;margin:0 0 8px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,5vw,80px);align-items:center}
+.about-image{position:relative;aspect-ratio:1.1;overflow:hidden;background:#2b2b2b}
+.about-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.about-image::after{content:"";position:absolute;inset:0;border:1px solid #fff4;pointer-events:none}
+.about-note{border-top:1px solid #7f7870;padding:22px 0;display:flex;justify-content:space-between;gap:20px;font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+.about-copy h2{margin:20px 0 28px;font-size:clamp(3.2rem,6.1vw,6.8rem)}
+.about-copy h2 em{font-style:normal;color:var(--coral)}
+.about-copy p{max-width:510px;color:#c9c1b9;font-size:clamp(16px,1.6vw,20px);line-height:1.7}
+.about-copy .smallprint{font-size:13px;color:#aaa299}
+.directions{background:var(--cream);color:#1d1d1d;padding-block:clamp(76px,8vw,115px)}
+.directions .section-index{color:#aa432f}
+.directions h2{font-size:clamp(3.4rem,7.5vw,8.5rem)}
+.directions .section-head p{color:#60574e}
+.direction-list{border-top:1px solid #666055}
+.direction{display:grid;grid-template-columns:70px 1fr 1fr 48px;align-items:center;gap:15px;border-bottom:1px solid #81776c;padding:25px 10px;min-height:95px}
+.direction .num{font-size:13px;font-weight:900;color:#b4513e}.direction h3{font-size:clamp(25px,3.2vw,50px);letter-spacing:-.065em;text-transform:uppercase;line-height:1;margin:0;font-weight:900}
+.direction p{font-size:13px;line-height:1.5;color:#554c44;margin:0}.direction .symbol{font-size:31px;color:#b34d37;font-weight:600;text-align:right}
+.direction:hover{background:#e4d8c7}
+.community{position:relative;min-height:510px;background:#191919;overflow:hidden;display:grid;align-items:end}
+.community>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 41%;filter:brightness(.52) saturate(.7)}
+.community::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#151515ec,transparent 75%)}
+.community-inner{position:relative;z-index:1;padding-top:120px;padding-bottom:68px}
+.community h2{font-size:clamp(3.6rem,7.5vw,8.5rem);max-width:1110px;margin:20px 0}
+.community h2 em{font-style:normal;color:var(--lime)}
+.community p{font-size:16px;max-width:540px;line-height:1.65}
+.gallery{padding-block:clamp(70px,8vw,120px)}
+.gallery .section-head h2{font-size:clamp(3.4rem,7vw,7rem)}
+.photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-flow:row dense;gap:12px}
+.shot{padding:0;border:0;position:relative;min-width:0;aspect-ratio:3/4;background:#292929;overflow:hidden}
+.shot.wide{grid-column:span 2;aspect-ratio:1.48}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease,filter .45s ease;filter:saturate(.8)}
+.shot:hover img,.shot:focus-visible img{transform:scale(1.055);filter:saturate(1.1)}
+.shot span{position:absolute;right:10px;bottom:9px;background:#101010b8;color:white;font-size:11px;letter-spacing:.08em;padding:7px 9px}
+.contact{background:var(--coral);color:#211913;padding-block:clamp(72px,8vw,110px)}
+.contact .section-index{color:#3d261f}.contact-inner{display:grid;grid-template-columns:1.4fr .6fr;gap:60px;align-items:end}
+.contact h2{font-size:clamp(3.7rem,8.3vw,9rem);margin:12px 0 25px}
+.contact p{font-size:clamp(15px,1.5vw,19px);line-height:1.6;max-width:550px}
+.contact-links{display:flex;flex-direction:column;gap:12px;margin:24px 0 0}
+.contact-links a{border:1px solid #3d2920;padding:16px 19px;font-weight:900;display:flex;align-items:center;justify-content:space-between;gap:15px;text-transform:uppercase;font-size:12px;letter-spacing:.08em}
+.contact-links a:hover{background:#211913;color:var(--cream)}
+.contact .contact-details{border-top:1px solid #854936;padding-top:22px;font-size:16px;line-height:1.7}
+.contact-details strong{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.foot{min-height:105px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#9e998f}
+.foot strong{color:var(--cream);font-size:18px;letter-spacing:-.05em}
+.lightbox{border:0;padding:0;width:min(92vw,1100px);max-height:92vh;background:transparent;color:white;box-shadow:0 20px 100px #0009}
+.lightbox::backdrop{background:#060606ee}
+.lightbox img{width:100%;max-height:85vh;object-fit:contain}
+.close{position:fixed;top:20px;right:20px;background:var(--coral);color:#151515;border:0;font-size:22px;font-weight:bold;border-radius:50%;width:45px;height:45px}
+.dialog-caption{font-size:12px;line-height:1.6;color:#eee;text-align:center;padding:8px 0}
+@media(max-width:980px){
+.nav{gap:14px}.hero{min-height:0;padding-top:42px;padding-bottom:72px;grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(4rem,9vw,7.5rem)}
+.hero-visual{min-height:460px;margin-left:-35px}
+.about-grid{gap:30px}.direction{grid-template-columns:45px 1fr 1fr 30px}
+}
+@media(max-width:720px){
+.topbar{height:65px}.topbar .nav{display:none}.outline-button{padding:10px 12px;font-size:10px}
+.brand{font-size:22px}.hero{display:flex;flex-direction:column;padding:40px 0 67px;gap:20px}
+.hero-copy{padding:0}.hero h1{font-size:clamp(4.2rem,14vw,7.6rem);margin:25px 0}
+.hero-lead{font-size:16px}.hero-visual{margin:0;min-height:500px;width:100%}
+.hero-photo.main{left:7%;width:93%}.hero-photo.small{width:40%}.round-label{right:0}
+.section-head{display:block}.section-head p{margin-top:22px;max-width:560px}
+.about-grid{grid-template-columns:1fr}.about-copy{grid-row:1}.about-image{aspect-ratio:1.08}
+.direction{grid-template-columns:38px 1fr 34px;gap:9px;padding:22px 0}.direction p{grid-column:2;grid-row:2}.direction .symbol{grid-column:3;grid-row:1}
+.community{min-height:490px}.community-inner{padding-bottom:50px}
+.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.shot.wide{grid-column:span 2}
+.contact-inner{grid-template-columns:1fr;gap:20px}.contact h2{font-size:clamp(3.7rem,11vw,6rem)}
+.foot{flex-direction:column;align-items:flex-start;justify-content:center;padding:25px 0;line-height:1.8}
+}
+@media(max-width:420px){
+.hero h1{font-size:clamp(3.65rem,15vw,5.5rem)}.hero-visual{min-height:375px}
+.round-label{width:105px;height:105px;font-size:10px}.poster{min-height:0}
+.photo-grid{gap:6px}.shot span{font-size:9px;padding:5px}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}.marquee div{animation:none}.action,.shot img{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+<div class="demo-ribbon">Демонстрационный дизайн-концепт · неофициальный сайт My Motion</div>
+<header class="topbar container">
+<a class="brand" href="#top" aria-label="My Motion — к началу"><span class="brand-mark">↗</span><span>MY<br>MOTION</span></a>
+<nav class="nav" aria-label="Разделы сайта"><a href="#about">О студии</a><a href="#styles">Направления</a><a href="#moments">Фото</a><a href="#contact">Контакты</a></nav>
+<a class="outline-button" href="https://taplink.cc/mymotion39" target="_blank" rel="noopener noreferrer">Записаться ↗</a>
+</header>
+<main id="top">
+<section class="hero container">
+<div class="hero-copy"><span class="eyebrow">Kaliningrad / Dance studio</span><h1>MOVE<br><span class="thin">YOUR</span><br><i>WAY.</i></h1>
+<p class="hero-lead">Хочешь танцевать? Начни с движения. В My Motion встречаются музыка, эмоции и люди, которым есть что выразить.</p>
+<a class="action" href="https://taplink.cc/mymotion39" target="_blank" rel="noopener noreferrer">Хочу танцевать <span aria-hidden="true">↗</span></a>
+<span class="hero-count">MY MOTION / танцы в Калининграде / 01</span></div>
+<div class="hero-visual"><img class="hero-photo main" src="assets/dance-223817.png" alt="Танцевальная пара на сцене" fetchpriority="high"><img class="hero-photo small" src="assets/dance-223428.png" alt="Танцевальная пара в силуэте"><div class="round-label">Feel<br>the<br>motion ↗</div></div>
+</section>
+<div class="marquee" aria-hidden="true"><div>MY MOTION <span>✳</span> FEEL THE MUSIC <span>✳</span> KEEP MOVING <span>✳</span> MY MOTION <span>✳</span> FEEL THE MUSIC <span>✳</span> KEEP MOVING <span>✳</span></div></div>
+<section class="block container" id="about">
+<div class="about-grid"><div class="about-image"><img src="assets/dance-223737.png" alt="Танцевальная тренировка в зале" loading="lazy"></div>
+<div class="about-copy"><span class="overline">01 / О студии</span><h2>Твоё<br>тело.<br><em>Твой</em><br>ритм.</h2>
+<p>Здесь танцуют не ради правильной картинки. Здесь находят движение, знакомятся, пробуют новое и становятся частью танцевального сообщества.</p>
+<p class="smallprint">Группы, занятия и танцевальные практики — актуальные условия уточняйте напрямую в студии.</p>
+<div class="about-note"><span>Открой движение</span><span>↘</span></div></div></div></section>
+<section class="directions" id="styles"><div class="container">
+<div class="section-head"><div><span class="section-index">02 / Направления</span><h2>Выбери<br>свой вайб.</h2></div><p>Парные танцы, пластика, характер и свобода самовыражения. Направления указаны по открытой карточке студии; набор в группы уточняйте перед записью.</p></div>
+<div class="direction-list">
+<div class="direction"><span class="num">01</span><h3>Хастл</h3><p>Парный танец и импровизация — движение, которое рождается в диалоге.</p><span class="symbol">↗</span></div>
+<div class="direction"><span class="num">02</span><h3>Контемп</h3><p>Пластика и свобода движения, внимание к телу и выразительности.</p><span class="symbol">↗</span></div>
+<div class="direction"><span class="num">03</span><h3>High heels</h3><p>Характер, линии и уверенность в каждом движении.</p><span class="symbol">↗</span></div>
+<div class="direction"><span class="num">04</span><h3>Вог</h3><p>Музыка, позы, стиль и яркая индивидуальная подача.</p><span class="symbol">↗</span></div>
+<div class="direction"><span class="num">05</span><h3>Свадебный танец</h3><p>Персональная история, рассказанная вдвоём без слов.</p><span class="symbol">↗</span></div>
+</div></div></section>
+<section class="community"><img src="assets/dance-223709.png" alt="Участники танцевального события" loading="lazy"><div class="community-inner container"><span class="overline">03 / Не только занятия</span><h2>Танец —<br>это <em>люди.</em></h2><p>Встречи, улыбки, совместное движение и моменты, которые хочется сохранить. Посмотри, как это выглядит в жизни.</p><a class="action alt" href="#moments">Смотреть моменты ↘</a></div></section>
+<section class="gallery container" id="moments"><div class="section-head"><div><span class="section-index">04 / Жизнь в движении</span><h2>Не стой.<br>Смотри.</h2></div><p>Настоящие кадры, переданные для демонстрационного сайта. Нажми на фото, чтобы рассмотреть ближе.</p></div><div class="photo-grid">
+<button class="shot wide" type="button" data-photo="assets/dance-223428.png" aria-label="Открыть фото 1"><img src="assets/dance-223428.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>01 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223437.png" aria-label="Открыть фото 2"><img src="assets/dance-223437.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>02 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223447.png" aria-label="Открыть фото 3"><img src="assets/dance-223447.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>03 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223459.png" aria-label="Открыть фото 4"><img src="assets/dance-223459.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>04 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223505.png" aria-label="Открыть фото 5"><img src="assets/dance-223505.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>05 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223538.png" aria-label="Открыть фото 6"><img src="assets/dance-223538.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>06 / 17</span></button>
+<button class="shot wide" type="button" data-photo="assets/dance-223709.png" aria-label="Открыть фото 7"><img src="assets/dance-223709.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>07 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223716.png" aria-label="Открыть фото 8"><img src="assets/dance-223716.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>08 / 17</span></button>
+<button class="shot wide" type="button" data-photo="assets/dance-223737.png" aria-label="Открыть фото 9"><img src="assets/dance-223737.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>09 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223747.png" aria-label="Открыть фото 10"><img src="assets/dance-223747.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>10 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223753.png" aria-label="Открыть фото 11"><img src="assets/dance-223753.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>11 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223759.png" aria-label="Открыть фото 12"><img src="assets/dance-223759.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>12 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223805.png" aria-label="Открыть фото 13"><img src="assets/dance-223805.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>13 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223811.png" aria-label="Открыть фото 14"><img src="assets/dance-223811.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>14 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223817.png" aria-label="Открыть фото 15"><img src="assets/dance-223817.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>15 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-223824.png" aria-label="Открыть фото 16"><img src="assets/dance-223824.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>16 / 17</span></button>
+<button class="shot " type="button" data-photo="assets/dance-213514.png" aria-label="Открыть фото 17"><img src="assets/dance-213514.png" alt="Кадр из жизни школы танцев My Motion" loading="lazy" decoding="async"><span>17 / 17</span></button>
+</div></section>
+<section class="contact" id="contact"><div class="container contact-inner">
+<div><span class="section-index">05 / До встречи на паркете</span><h2>Твой ход.<br>Танцуй.</h2><p>Первое движение — написать в студию. Уточни направление, актуальное расписание и условия пробного занятия.</p><div class="contact-links"><a href="https://taplink.cc/mymotion39" target="_blank" rel="noopener noreferrer">Узнать о занятиях / Taplink <span aria-hidden="true">↗</span></a><a href="https://vk.com/mymotion39" target="_blank" rel="noopener noreferrer">Сообщество My Motion / VK <span aria-hidden="true">↗</span></a><a href="tel:+79062135617">Позвонить в студию <span aria-hidden="true">↗</span></a></div></div>
+<div class="contact-details"><strong>Калининград</strong>ул. Генерал-лейтенанта Озерова, 19 к2<br>2 этаж<br><br><a href="https://yandex.com/maps/org/my_motion/162038205021/" target="_blank" rel="noopener noreferrer">Смотреть на карте ↗</a><br><br><a href="tel:+79062135617">+7 (906) 213-56-17</a></div>
+</div></section>
+</main>
+<footer class="foot container"><strong>MY MOTION ↗</strong><span>Демонстрационный дизайн-концепт для My Motion · не официальный сайт организации</span><a href="#top">Наверх ↑</a></footer>
+<dialog class="lightbox" id="lightbox" aria-label="Просмотр фотографии"><button class="close" id="closePhoto" type="button" aria-label="Закрыть фотографию">×</button><img id="fullPhoto" alt="Фотография студии My Motion"><div class="dialog-caption">MY MOTION / моменты в движении</div></dialog>
+<script>
+(function(){
+const dialog=document.getElementById("lightbox"), full=document.getElementById("fullPhoto");
+document.querySelectorAll("[data-photo]").forEach(button=>button.addEventListener("click",function(){full.src=button.dataset.photo;dialog.showModal()}));
+document.getElementById("closePhoto").addEventListener("click",()=>dialog.close());
+dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
+dialog.addEventListener("close",()=>full.removeAttribute("src"));
+})();
+</script>
+</body></html>

@@ -1,128 +1,26 @@
 <!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow,noarchive">
-<meta name="color-scheme" content="dark">
-<meta name="description" content="KLD Web Studio — коллекция персональных дизайн-концептов для локального бизнеса Калининграда.">
-<title>KLD Web Studio — портфолио сайтов</title>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#10191b"><meta name="description" content="KLD Web Studio — индивидуальные дизайн-концепты сайтов для бизнеса Калининграда."><title>KLD Web Studio — портфолио</title>
 <style>
-:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:dark;--bg:#10191b;--text:#ecf8f4;--muted:#a6bdb7;--mint:#a4efd6;--border:#395650}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;min-width:320px;min-height:100svh;color:var(--text);background:radial-gradient(ellipse 62% 43% at 93% 2%,#1b4d41 0%,transparent 77%),var(--bg)}
-a{color:inherit;text-decoration:none}button{font:inherit}
-a:focus-visible,button:focus-visible{outline:3px solid #d0ffe8;outline-offset:4px}
-.container{width:min(1240px,calc(100% - 64px));margin-inline:auto}
-.head{height:68px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #3b56504a}
-.brand{font-weight:900;letter-spacing:.2em;font-size:12px;color:var(--mint);white-space:nowrap}
-.nav{display:flex;align-items:center;gap:22px;font-size:13px;color:#bfd1cb}.nav a:hover{color:var(--mint)}
-.hero{padding:59px 0 48px;display:flex;align-items:end;justify-content:space-between;gap:48px}
-.kicker{font-size:11px;color:var(--mint);letter-spacing:.19em;text-transform:uppercase;font-weight:800}
-h1{font-size:clamp(2.85rem,6vw,5.7rem);line-height:1.02;letter-spacing:-.073em;margin:15px 0 15px;max-width:900px}h1 span{color:var(--mint)}
-.hero p{color:#b9cdc7;line-height:1.6;font-size:clamp(14px,1.4vw,16px);max-width:665px;margin:0}
-.hero-note{color:#9db8ad;font-size:12px;line-height:1.6;max-width:190px;flex-shrink:0;border-left:1px solid #5a8172;padding-left:20px;margin-bottom:3px}
-.hero-note strong{color:var(--mint);display:block;font-size:28px;letter-spacing:-.055em;line-height:1.1;margin-bottom:8px}
-.portfolio{padding:24px 0 62px;border-top:1px solid #3d5851}
-.portfolio-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
-.portfolio-heading{display:flex;align-items:baseline;gap:15px;min-width:0}
-h2{font-size:clamp(1.35rem,2.1vw,1.85rem);letter-spacing:-.045em;margin:0}
-.project-total{color:#a0bbb0;font-size:12px;white-space:nowrap}
-.controls{display:flex;align-items:center;gap:9px}
-.progress{color:#b5cbc2;font-size:12px;font-weight:700;white-space:nowrap;min-width:54px;text-align:center;font-variant-numeric:tabular-nums}
-.arrow{width:39px;height:39px;border:1px solid #56756a;border-radius:50%;background:#1c302d;color:#defbec;cursor:pointer;font-size:21px;display:grid;place-items:center;line-height:1}
-.arrow:hover:not(:disabled){background:#2c5a4b}.arrow:disabled{opacity:.32;cursor:default}
-.filters{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;margin:0 0 20px;padding-bottom:2px}.filters::-webkit-scrollbar{display:none}
-.filter{border:1px solid #435f55;background:#192a29;color:#c3d7cf;padding:9px 14px;border-radius:100px;white-space:nowrap;font-size:12px;font-weight:700;cursor:pointer}
-.filter[aria-pressed="true"]{background:var(--mint);color:#17342a;border-color:var(--mint)}.filter:hover:not([aria-pressed="true"]){border-color:#a4efd6}
-.slider{overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;padding:1px 1px 9px}.slider::-webkit-scrollbar{display:none}
-.track{display:flex;gap:17px;align-items:stretch}
-.project{scroll-snap-align:start;flex:0 0 72%;min-width:0;background:#1c2a2b;border:1px solid #3f5952;border-radius:18px;overflow:hidden;transition:border-color .2s,transform .2s}
-.project:hover{border-color:#92d8c0;transform:translateY(-2px)}
-.project[hidden]{display:none}
-.project a{display:flex;flex-direction:column;height:100%}
-.poster{min-height:225px;aspect-ratio:2.4/1;display:flex;flex-direction:column;justify-content:space-between;padding:25px 29px;position:relative;isolation:isolate;overflow:hidden}
-.poster .tiny{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:850;position:relative;z-index:1}
-.poster strong{font-size:clamp(2.7rem,4.5vw,4.8rem);letter-spacing:-.075em;line-height:.99;position:relative;z-index:1}
-.poster svg{position:absolute;right:-16px;bottom:-50px;width:48%;max-width:235px;opacity:.85;pointer-events:none}
-.poster.coffee{background:radial-gradient(circle at 88% 18%,#f2d1ab,transparent 51%),#d5bda1;color:#3c2e23}
-.poster.coffee strong{font:normal clamp(3rem,4.6vw,5rem)/.98 Georgia,serif;letter-spacing:-.064em}
-.poster.auto{background:radial-gradient(circle at 85% 27%,#50705e,transparent 56%),#273735;color:#f4f8ee}
-.poster.auto strong{font-weight:900;text-transform:uppercase}.poster.auto strong em{font-style:normal;color:#d6fc75}
-.details{padding:18px 24px 23px;display:flex;flex-direction:column;gap:7px;flex:1}
-.details .label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#add0c0;font-weight:800}
-.details .title-row{display:flex;align-items:center;justify-content:space-between;gap:15px}
-.details h3{font-size:clamp(18px,2vw,24px);letter-spacing:-.04em;margin:0}
-.open{color:var(--mint);font-size:12px;font-weight:750;white-space:nowrap}
-.details p{font-size:13px;color:#b8cbc4;line-height:1.5;margin:0}
-.footer{border-top:1px solid #37534a;display:flex;gap:20px;align-items:center;justify-content:space-between;padding:19px 0 27px;color:#9eb8ae;font-size:12px}
-.footer b{color:var(--mint);letter-spacing:.16em;font-size:11px}
-@media(max-width:800px){.hero-note{display:none}.hero{padding:47px 0 38px}.project{flex-basis:80%}}
-@media(max-width:550px){.container{width:calc(100% - 34px)}.head{height:60px}.nav{gap:12px;font-size:12px}.brand{font-size:10px;letter-spacing:.11em}.hero{padding:42px 0 31px}.hero h1{font-size:clamp(2.75rem,12vw,4rem)}.hero p{font-size:13px}.portfolio{padding:20px 0 42px}.portfolio-top{align-items:start}.portfolio-heading{display:block}.project-total{display:block;margin-top:5px}.arrow{width:35px;height:35px}.progress{min-width:38px}.project{flex-basis:88%}.poster{padding:21px;min-height:200px;aspect-ratio:1.65/1}.poster strong{font-size:2.65rem}.poster.coffee strong{font-size:3rem}.details{padding:17px}.details .title-row{align-items:start}.open{font-size:11px}.footer{align-items:start;flex-direction:column;gap:8px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project{transition:none}}
-</style>
-</head>
-<body>
-<header class="head container"><a class="brand" href="./">KLD • WEB STUDIO</a><nav class="nav"><a href="#portfolio">Проекты</a><a href="#contact">О студии</a></nav></header>
-<main>
-<section class="hero container" aria-labelledby="hero-title">
-<div><div class="kicker">Веб-студия / Калининград</div><h1 id="hero-title">Сайты, которые <span>выделяют.</span></h1><p>Персональные дизайн-концепты для локального бизнеса. Каждый проект — свой характер, понятная структура и работающий прототип.</p></div>
-<aside class="hero-note"><strong>02 / 100</strong>Наши первые концепты. Коллекция будет пополняться новыми работами.</aside>
-</section>
-<section class="portfolio" id="portfolio" aria-labelledby="projects-title"><div class="container">
-<div class="portfolio-top"><div class="portfolio-heading"><h2 id="projects-title">Проекты</h2><span class="project-total" id="projectTotal">2 дизайн-концепта</span></div><div class="controls" aria-label="Управление каруселью"><span class="progress" id="progress" aria-live="polite">01 / 02</span><button class="arrow" id="prev" type="button" aria-label="Предыдущий проект" disabled>‹</button><button class="arrow" id="next" type="button" aria-label="Следующий проект">›</button></div></div>
-<div class="filters" role="group" aria-label="Категории проектов"><button type="button" class="filter" data-filter="all" aria-pressed="true">Все проекты</button><button type="button" class="filter" data-filter="coffee" aria-pressed="false">Кафе и рестораны</button><button type="button" class="filter" data-filter="auto" aria-pressed="false">Автосервисы</button></div>
-<div class="slider" id="slider" role="region" aria-roledescription="карусель" aria-label="Портфолио сайтов" tabindex="0"><div class="track" id="track">
-<article class="project" data-category="coffee"><a href="demos/coffee-8f2a91c4/" aria-label="Смотреть прототип кофейни «Кофе рядом»"><div class="poster coffee"><span class="tiny">Кофейня / Дизайн-концепт</span><strong>Вкусная<br>пауза.</strong><svg viewBox="0 0 220 220" fill="none" aria-hidden="true"><ellipse cx="105" cy="181" rx="92" ry="17" fill="#a16e55"/><path d="M46 68h129l-13 82c-4 25-25 33-52 33-32 0-51-12-54-33L46 68Z" fill="#fff3de"/><path d="M175 81c59-25 58 60-4 59" stroke="#fff3de" stroke-width="18"/><ellipse cx="110" cy="69" rx="64" ry="17" fill="#6a4632"/><path d="M93 43c-12-16 13-25 0-42M131 43c-15-16 12-25 1-42" stroke="#fff3de" stroke-width="5" stroke-linecap="round"/></svg></div><div class="details"><span class="label">Кафе и рестораны · Вымышленная компания</span><div class="title-row"><h3>Кофе рядом</h3><span class="open">Смотреть ↗</span></div><p>Тёплый минимализм, выразительная типографика, меню и история места.</p></div></a></article>
-<article class="project" data-category="auto"><a href="demos/auto-b7c40e92/" aria-label="Смотреть прототип автосервиса «Гараж 39»"><div class="poster auto"><span class="tiny">Автосервис / Дизайн-концепт</span><strong>Твой авто.<br><em>Наше дело.</em></strong><svg viewBox="0 0 300 190" aria-hidden="true"><ellipse cx="148" cy="161" rx="130" ry="18" fill="#111c1e"/><path d="M15 115 56 95 91 52q12-12 28-12h83q18 2 30 18l39 39 17 27v28H15Z" fill="#7c9290" stroke="#c9f254" stroke-width="3"/><path d="M97 58h105l43 42H68Z" fill="#152427"/><path d="M153 58v42" stroke="#7c9290" stroke-width="4"/><circle cx="69" cy="148" r="29" fill="#162022" stroke="#b5c8c2" stroke-width="6"/><circle cx="237" cy="148" r="29" fill="#162022" stroke="#b5c8c2" stroke-width="6"/></svg></div><div class="details"><span class="label">Автосервисы · Вымышленная компания</span><div class="title-row"><h3>Гараж 39</h3><span class="open">Смотреть ↗</span></div><p>Контрастная визуальная система с акцентом на специализацию и услуги.</p></div></a></article>
-</div></div></div></section>
-</main>
-<footer class="footer container" id="contact"><b>KLD • WEB STUDIO</b><span>Демонстрационные концепты, не официальные сайты организаций · Калининград</span></footer>
+:root{color-scheme:dark;--bg:#10191b;--line:#38564f;--mint:#a4efd6;--white:#f1f8f3;--muted:#a8c0b6;font-family:Arial,Helvetica,system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 55% 42% at 90% 1%,#204b3e,transparent 75%),var(--bg);color:var(--white);min-width:320px;min-height:100vh}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offset:3px}.wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+header{height:70px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #56746a65}.brand{font-size:12px;letter-spacing:.23em;font-weight:900;color:var(--mint)}nav{font-size:13px;display:flex;gap:22px;color:#d0dfd8}nav a:hover{color:var(--mint)}
+.hero{padding:58px 0 43px}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);font-weight:900}.hero h1{font-size:clamp(3rem,6.5vw,6rem);letter-spacing:-.078em;line-height:1.01;margin:15px 0 19px}.hero h1 em{font-style:normal;color:var(--mint)}.hero p{color:#c0d3ca;max-width:650px;line-height:1.6;margin:0;font-size:15px}
+.portfolio{border-top:1px solid #48665b;padding:23px 0 65px}.portfolio-head{display:flex;justify-content:space-between;align-items:center;gap:22px;margin-bottom:20px}.portfolio h2{font-size:23px;letter-spacing:-.05em;margin:0}.meta{display:inline-block;font-size:12px;color:#a7c1b6;margin-left:12px}.controls{display:flex;align-items:center;gap:9px}.counter{font-size:12px;letter-spacing:.07em;color:#bed5c9;min-width:55px;text-align:center}.arrow{height:38px;width:38px;border:1px solid #658a7d;border-radius:50%;background:#203932;color:#effff8;font-size:22px;display:grid;place-items:center}.arrow:disabled{opacity:.3;cursor:default}.arrow:hover:not(:disabled){background:#286247}
+.filters{display:flex;gap:8px;overflow-x:auto;margin-bottom:16px;scrollbar-width:none}.filter{background:#20322e;color:#e0efe7;border:1px solid #43685c;border-radius:50px;padding:9px 14px;font-size:12px;white-space:nowrap;font-weight:750}.filter[aria-pressed="true"]{color:#19372c;background:var(--mint);border-color:var(--mint)}
+.slider{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 0 11px}.slider::-webkit-scrollbar{display:none}.track{display:flex;gap:15px}.project{flex:0 0 80%;scroll-snap-align:start;border:1px solid #516a60;border-radius:18px;overflow:hidden;background:#1c2b2a}.project:only-child{flex-basis:100%}.project[hidden]{display:none}.project a{display:grid;grid-template-columns:1.03fr .97fr;min-height:340px}.project-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;padding:clamp(25px,3.5vw,48px);gap:22px}.project-copy .tag{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#a8dfc8;font-weight:900}.project h3{font-size:clamp(3.1rem,6vw,6rem);letter-spacing:-.08em;line-height:.91;margin:0}.project h3 span{color:#ff725a}.project p{color:#c1d2c9;line-height:1.65;font-size:14px;max-width:410px;margin:0}.view{font-size:12px;letter-spacing:.05em;font-weight:800;border-bottom:1px solid var(--mint);padding-bottom:7px;color:var(--mint)}.cover{position:relative;min-height:330px;background:#272523;overflow:hidden}.cover img{height:100%;width:100%;object-fit:cover;object-position:50% 35%;transition:transform .4s}.project:hover .cover img{transform:scale(1.045)}.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#1c2b2a 0%,transparent 35%),linear-gradient(0deg,#10191955,transparent 60%);z-index:1}.cover .number{position:absolute;right:20px;bottom:19px;font-weight:900;letter-spacing:.13em;font-size:11px;z-index:2;color:#f5f0e6}
+footer{border-top:1px solid #416154;color:#abc4b8;font-size:11px;line-height:1.6;display:flex;justify-content:space-between;gap:15px;padding:23px 0 30px}footer b{color:var(--mint);letter-spacing:.16em;font-weight:900}
+@media(max-width:760px){.hero{padding:46px 0 33px}.project a{grid-template-columns:1fr}.project-copy{min-height:260px}.cover{min-height:280px;height:340px;grid-row:1}.cover::before{background:linear-gradient(0deg,#1c2b2a44,transparent 50%)}.project{flex-basis:90%}.project:only-child{flex-basis:100%}}
+@media(max-width:470px){.wrap{width:calc(100% - 34px)}header{height:61px}.brand{font-size:10px;letter-spacing:.15em}.hero h1{font-size:clamp(2.9rem,12.8vw,4rem)}.hero p{font-size:13px}.portfolio-head h2{font-size:20px}.meta{display:block;margin:4px 0 0}.controls{gap:5px}.arrow{height:34px;width:34px}.counter{min-width:42px}.cover{height:280px;min-height:240px}.project-copy{padding:25px;min-height:290px}.project h3{font-size:3.5rem}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cover img{transition:none}}
+</style></head>
+<body><header class="wrap"><a class="brand" href="./">KLD • WEB STUDIO</a><nav><a href="#projects">Проекты</a><a href="#contact">О студии</a></nav></header>
+<main><section class="hero wrap"><div class="eyebrow">Веб-студия · Калининград</div><h1>Сайты, которые <em>выделяют.</em></h1><p>Не одинаковые шаблоны, а дизайн под характер бизнеса. Здесь собраны работающие концепты, которые можно посмотреть до запуска.</p></section>
+<section class="portfolio" id="projects"><div class="wrap"><div class="portfolio-head"><div><h2>Проекты <span class="meta" id="projectTotal">1 дизайн-концепт</span></h2></div><div class="controls"><span class="counter" id="counter" aria-live="polite">01 / 01</span><button class="arrow" id="prev" type="button" aria-label="Предыдущий проект" disabled>‹</button><button class="arrow" id="next" type="button" aria-label="Следующий проект" disabled>›</button></div></div>
+<div class="filters" role="group" aria-label="Категории"><button class="filter" data-filter="all" type="button" aria-pressed="true">Все проекты</button><button class="filter" data-filter="dance" type="button" aria-pressed="false">Танцевальные студии</button></div>
+<div class="slider" id="slider" role="region" aria-roledescription="карусель" aria-label="Сайты-проекты" tabindex="0"><div class="track">
+<article class="project" data-category="dance"><a href="demos/my-motion-4b61e8/" aria-label="Открыть концепт сайта MY MOTION"><div class="project-copy"><div class="tag">Танцевальная студия / Калининград / Концепт</div><div><h3>MY<br><span>MOTION.</span></h3></div><p>Кинетичная типографика, реальная энергия танцев, живая галерея и персональный ритм в каждом блоке.</p><div class="view">Смотреть сайт ↗</div></div><div class="cover"><img src="demos/my-motion-4b61e8/assets/dance-223817.png" alt="Танцевальная пара на сцене — My Motion" loading="eager"><span class="number">PROJECT / 001</span></div></a></article>
+</div></div></div></section></main>
+<footer class="wrap" id="contact"><b>KLD • WEB STUDIO</b><span>Демонстрационные концепты · неофициальные сайты организаций · Калининград</span></footer>
 <script>
-(()=>{
-"use strict";
-const slider=document.getElementById("slider");
-const cards=[...document.querySelectorAll(".project")];
-const filters=[...document.querySelectorAll("[data-filter]")];
-const prev=document.getElementById("prev"),next=document.getElementById("next");
-const progress=document.getElementById("progress"),total=document.getElementById("projectTotal");
-const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
-const visible=()=>cards.filter(card=>!card.hidden);
-let current=0;
-function update(){
- const items=visible(),max=Math.max(0,slider.scrollWidth-slider.clientWidth);
- const positions=items.map(card=>card.offsetLeft-items[0].offsetLeft);
- current=positions.reduce((best,pos,i)=>Math.abs(pos-slider.scrollLeft)<Math.abs(positions[best]-slider.scrollLeft)?i:best,0);
- progress.textContent=String(current+1).padStart(2,"0")+" / "+String(items.length).padStart(2,"0");
- const canScroll=max>2;
- prev.disabled=!canScroll||slider.scrollLeft<2;
- next.disabled=!canScroll||slider.scrollLeft>=max-2;
- total.textContent=items.length+" "+(items.length===1?"дизайн-концепт":"дизайн-концепта");
-}
-function go(direction){
- const items=visible();if(!items.length)return;
- const max=Math.max(0,slider.scrollWidth-slider.clientWidth);
- const offsets=items.map(card=>card.offsetLeft-items[0].offsetLeft);
- const at=slider.scrollLeft;
- let target;
- if(direction>0){target=offsets.find(x=>x>at+3);if(target===undefined)target=max;}
- else {target=[...offsets].reverse().find(x=>x<at-3);if(target===undefined)target=0;}
- slider.scrollTo({left:Math.max(0,Math.min(max,target)),behavior:reduced.matches?"instant":"smooth"});
-}
-prev.addEventListener("click",()=>go(-1));
-next.addEventListener("click",()=>go(1));
-filters.forEach(button=>button.addEventListener("click",()=>{
- const kind=button.dataset.filter;
- filters.forEach(b=>b.setAttribute("aria-pressed",String(button===b)));
- cards.forEach(card=>card.hidden=kind!=="all"&&card.dataset.category!==kind);
- slider.scrollTo({left:0,behavior:"instant"});
- requestAnimationFrame(update);
-}));
-slider.addEventListener("scroll",()=>requestAnimationFrame(update),{passive:true});
-window.addEventListener("resize",update);
-if(typeof ResizeObserver!=="undefined")new ResizeObserver(update).observe(slider);
-update();
-})();
-</script>
-</body></html>
+(()=>{const root=document.getElementById("slider"),buttons=[...document.querySelectorAll("[data-filter]")],cards=[...document.querySelectorAll(".project")],prev=document.getElementById("prev"),next=document.getElementById("next"),counter=document.getElementById("counter"),total=document.getElementById("projectTotal");const visible=()=>cards.filter(x=>!x.hidden);function refresh(){const a=visible(),max=Math.max(0,root.scrollWidth-root.clientWidth),left=root.scrollLeft;const at=a.length?a.reduce((best,x,i)=>Math.abs(x.offsetLeft-a[0].offsetLeft-left)<Math.abs(a[best].offsetLeft-a[0].offsetLeft-left)?i:best,0):0;counter.textContent=String(at+1).padStart(2,"0")+" / "+String(a.length).padStart(2,"0");total.textContent=a.length+" "+(a.length===1?"дизайн-концепт":"дизайн-концепта");prev.disabled=max<2||left<2;next.disabled=max<2||left>=max-2;}function step(dir){const a=visible();if(!a.length)return;const max=Math.max(0,root.scrollWidth-root.clientWidth),positions=a.map(x=>x.offsetLeft-a[0].offsetLeft),cur=root.scrollLeft;let x=dir>0?positions.find(p=>p>cur+3):[...positions].reverse().find(p=>p<cur-3);root.scrollTo({left:Math.max(0,Math.min(max,x===undefined?(dir>0?max:0):x)),behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth"});}prev.onclick=()=>step(-1);next.onclick=()=>step(1);buttons.forEach(b=>b.onclick=()=>{buttons.forEach(x=>x.setAttribute("aria-pressed",String(x===b)));cards.forEach(x=>x.hidden=b.dataset.filter!=="all"&&x.dataset.category!==b.dataset.filter);root.scrollTo({left:0,behavior:"instant"});requestAnimationFrame(refresh);});root.addEventListener("scroll",()=>requestAnimationFrame(refresh),{passive:true});window.addEventListener("resize",refresh);refresh();})();
+</script></body></html>
