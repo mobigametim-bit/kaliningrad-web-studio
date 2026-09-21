@@ -10,6 +10,12 @@
 
 Тестовые вымышленные кофейня и автосервис удалены.
 
+## Beauty&Health
+- Сайт: `demos/beauty-health-6c2e91/index.html`.
+- Фото: 25 пользовательских PNG из отдельной папки Beauty&Health на Google Drive.
+- Арт-дирекшен и источники: `demos/beauty-health-6c2e91/PROJECT.md`.
+- Неофициальный дизайн-концепт, без фиктивных цен, медицинских обещаний и форм обработки заявок.
+
 ## Сайт My Motion
 - Дизайн: dance editorial, крупная типографика, коралловый акцент, адаптивная сетка, галерея и полноэкранный просмотр фото.
 - Факты об организации проверены по Яндекс Картам и 2ГИС, список направлений требует актуального подтверждения непосредственно в студии. На сайте нет выдуманных цен, графиков, преподавателей или дословно заимствованных отзывов.
@@ -21,6 +27,7 @@
 GitHub Pages: \`Settings → Pages → Deploy from a branch → main → /(root)\`.
 - Портфолио: https://mobigametim-bit.github.io/kaliningrad-web-studio/
 - My Motion: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/my-motion-4b61e8/
+- Beauty&Health: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/beauty-health-6c2e91/
 
 Не хранить в публичном репозитории приватную базу контактов, внутреннюю аналитику по лидам или исходные досье. Публичные репозитории и страницы не защищены от копирования.
 
