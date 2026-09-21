@@ -15,7 +15,7 @@ button{cursor:pointer}img{max-width:100%;display:block}a:focus-visible,button:fo
 ::selection{background:var(--coral);color:#151515}
 .container{width:min(1450px,calc(100% - clamp(36px,7vw,144px)));margin-inline:auto}
 .noise{position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.11;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' opacity='.24' filter='url(%23n)'/%3E%3C/svg%3E")}
-.demo-ribbon{font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;text-align:center;background:var(--coral);color:#191515;font-weight:850}
+.demo-ribbon{font-size:10px;letter-spacing:.10em;text-transform:uppercase;padding:9px 16px;text-align:center;background:var(--coral);color:#191515;font-weight:850;line-height:1.5}.demo-ribbon a{border-bottom:1px solid currentColor;font-weight:900}.concept-notice{background:#232321;border-top:1px solid #7b7366;padding-block:27px}.concept-notice .concept-layout{display:grid;grid-template-columns:minmax(120px,.32fr) 1fr;gap:22px}.concept-notice h2{font-size:clamp(18px,2vw,25px);line-height:1.15;letter-spacing:-.04em;text-transform:none;margin:0;color:var(--lime)}.concept-notice p{margin:0 0 8px;font-size:13px;line-height:1.65;color:#ddd8d0;max-width:950px}.concept-notice p:last-child{margin-bottom:0}@media(max-width:720px){.concept-notice .concept-layout{grid-template-columns:1fr;gap:11px}.concept-notice{padding-block:22px}}
 .topbar{height:76px;border-bottom:1px solid #ffffff2c;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:flex;align-items:center;gap:8px;font-size:24px;letter-spacing:-.08em;font-weight:950;line-height:.78}
 .brand-mark{width:32px;height:32px;border-radius:50%;background:var(--coral);color:#1c1412;display:grid;place-items:center;font-size:23px;transform:rotate(-22deg)}
@@ -127,7 +127,7 @@ html{scroll-behavior:auto}.marquee div{animation:none}.action,.shot img{transiti
 </head>
 <body>
 <div class="noise" aria-hidden="true"></div>
-<div class="demo-ribbon">Демонстрационный дизайн-концепт · неофициальный сайт My Motion</div>
+<div class="demo-ribbon" role="note">Независимый демонстрационный дизайн-концепт KLD Web Studio · не официальный сайт My Motion · <a href="#concept-notice">Подробнее о статусе ↓</a></div>
 <header class="topbar container">
 <a class="brand" href="#top" aria-label="My Motion — к началу"><span class="brand-mark">↗</span><span>MY<br>MOTION</span></a>
 <nav class="nav" aria-label="Разделы сайта"><a href="#about">О студии</a><a href="#styles">Направления</a><a href="#moments">Фото</a><a href="#contact">Контакты</a></nav>
@@ -182,6 +182,7 @@ html{scroll-behavior:auto}.marquee div{animation:none}.action,.shot img{transiti
 <div class="contact-details"><strong>Калининград</strong>ул. Генерал-лейтенанта Озерова, 19 к2<br>2 этаж<br><br><a href="https://yandex.com/maps/org/my_motion/162038205021/" target="_blank" rel="noopener noreferrer">Смотреть на карте ↗</a><br><br><a href="tel:+79062135617">+7 (906) 213-56-17</a></div>
 </div></section>
 </main>
+<section class="concept-notice" id="concept-notice" aria-labelledby="notice-title"><div class="container concept-layout"><h2 id="notice-title">О статусе сайта</h2><div><p><strong>Это независимый демонстрационный дизайн-концепт, подготовленный KLD Web Studio в качестве предложения по разработке сайта для MY MOTION.</strong> Он не является официальным сайтом или представительством студии. KLD Web Studio не действует от имени MY MOTION.</p><p>Информация об услугах, направлениях и контактах показана для демонстрации дизайна и требует подтверждения представителем организации. Этот сайт не принимает и не обрабатывает заявки или оплату. Ссылки на запись ведут на внешние ресурсы; актуальные условия уточняйте непосредственно у студии.</p></div></div></section>
 <footer class="foot container"><strong>MY MOTION ↗</strong><span>Демонстрационный дизайн-концепт для My Motion · не официальный сайт организации</span><a href="#top">Наверх ↑</a></footer>
 <dialog class="lightbox" id="lightbox" aria-label="Просмотр фотографии"><button class="close" id="closePhoto" type="button" aria-label="Закрыть фотографию">×</button><img id="fullPhoto" alt="Фотография студии My Motion"><div class="dialog-caption">MY MOTION / моменты в движении</div></dialog>
 <script>
