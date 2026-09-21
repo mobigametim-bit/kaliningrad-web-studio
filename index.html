@@ -38,7 +38,7 @@ h2{font-size:clamp(1.35rem,2.1vw,1.85rem);letter-spacing:-.045em;margin:0}
 .filter[aria-pressed="true"]{background:var(--mint);color:#17342a;border-color:var(--mint)}.filter:hover:not([aria-pressed="true"]){border-color:#a4efd6}
 .slider{overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;padding:1px 1px 9px}.slider::-webkit-scrollbar{display:none}
 .track{display:flex;gap:17px;align-items:stretch}
-.project{scroll-snap-align:start;flex:0 0 clamp(320px,55%,620px);min-width:0;background:#1c2a2b;border:1px solid #3f5952;border-radius:18px;overflow:hidden;transition:border-color .2s,transform .2s}
+.project{scroll-snap-align:start;flex:0 0 72%;min-width:0;background:#1c2a2b;border:1px solid #3f5952;border-radius:18px;overflow:hidden;transition:border-color .2s,transform .2s}
 .project:hover{border-color:#92d8c0;transform:translateY(-2px)}
 .project[hidden]{display:none}
 .project a{display:flex;flex-direction:column;height:100%}
@@ -58,7 +58,6 @@ h2{font-size:clamp(1.35rem,2.1vw,1.85rem);letter-spacing:-.045em;margin:0}
 .details p{font-size:13px;color:#b8cbc4;line-height:1.5;margin:0}
 .footer{border-top:1px solid #37534a;display:flex;gap:20px;align-items:center;justify-content:space-between;padding:19px 0 27px;color:#9eb8ae;font-size:12px}
 .footer b{color:var(--mint);letter-spacing:.16em;font-size:11px}
-@media(min-width:1450px){.project{flex-basis:51%}}
 @media(max-width:800px){.hero-note{display:none}.hero{padding:47px 0 38px}.project{flex-basis:80%}}
 @media(max-width:550px){.container{width:calc(100% - 34px)}.head{height:60px}.nav{gap:12px;font-size:12px}.brand{font-size:10px;letter-spacing:.11em}.hero{padding:42px 0 31px}.hero h1{font-size:clamp(2.75rem,12vw,4rem)}.hero p{font-size:13px}.portfolio{padding:20px 0 42px}.portfolio-top{align-items:start}.portfolio-heading{display:block}.project-total{display:block;margin-top:5px}.arrow{width:35px;height:35px}.progress{min-width:38px}.project{flex-basis:88%}.poster{padding:21px;min-height:200px;aspect-ratio:1.65/1}.poster strong{font-size:2.65rem}.poster.coffee strong{font-size:3rem}.details{padding:17px}.details .title-row{align-items:start}.open{font-size:11px}.footer{align-items:start;flex-direction:column;gap:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project{transition:none}}
