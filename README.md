@@ -33,12 +33,22 @@
 - Рекламные генерации отделены от галереи пользовательских работ; фальшивых «до/после», цен, сроков, отзывов и гарантий нет. Верхняя и нижняя маркировки независимого концепта сохранены.
 - У компании уже есть мини-сайт на orgs.biz — отсутствие интернет-представительства не утверждаем.
 
+## Sun Service
+- Сайт: `demos/sun-service-24576109/index.html`.
+- [PROJECT.md](demos/sun-service-24576109/PROJECT.md) — источники, арт-дирекшен, переименование бинарных файлов, сведения о шрифтах.
+- 13 предоставленных снимков `photo-01.png`—`photo-13.png` и пять сгенерированных `generated-01.png`—`generated-05.png`, исходные бинарные файлы не сжимались при переименовании.
+- Фирменная жёлто-лаймовая палитра по фото вывески, контрастные светлые и графитовые секции, работающая фотогалерея и прямой звонок.
+- Локальные шрифты с кириллицей Russo One и Golos Text, лицензии SIL OFL включены в `assets/fonts/`.
+- Не повторяет графитово-терракотовую дизайн-систему «Кузов Калининград»; логотип стилизован текстом и солнечными лучами, а не выдан за оригинальный файл.
+- Перед продажей согласовать права на фото и использование бренда, проверить связь с sunservice39.ru и актуальный перечень услуг.
+
 ## Публикация
 GitHub Pages: \`Settings → Pages → Deploy from a branch → main → /(root)\`.
 - Портфолио: https://mobigametim-bit.github.io/kaliningrad-web-studio/
 - My Motion: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/my-motion-4b61e8/
 - Beauty&Health: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/beauty-health-6c2e91/
 - Кузов Калининград: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/kuzov-kaliningrad-78721853/
+- Sun Service: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/sun-service-24576109/
 
 Не хранить в публичном репозитории приватную базу контактов, внутреннюю аналитику по лидам или исходные досье. Публичные репозитории и страницы не защищены от копирования.
 
