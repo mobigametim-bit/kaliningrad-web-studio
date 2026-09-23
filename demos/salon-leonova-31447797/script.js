@@ -9,7 +9,7 @@
       menuButton.setAttribute('aria-label', 'Открыть меню');
     };
     menuButton.addEventListener('click', () => {
-      const opening = !mobileNav.hidden;
+      const opening = mobileNav.hidden;
       mobileNav.hidden = !opening;
       menuButton.setAttribute('aria-expanded', String(opening));
       menuButton.setAttribute('aria-label', opening ? 'Закрыть меню' : 'Открыть меню');
