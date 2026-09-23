@@ -42,6 +42,13 @@
 - Не повторяет графитово-терракотовую дизайн-систему «Кузов Калининград»; логотип стилизован текстом и солнечными лучами, а не выдан за оригинальный файл.
 - Перед продажей согласовать права на фото и использование бренда, проверить связь с sunservice39.ru и актуальный перечень услуг.
 
+## Кофейня «Место»
+- Сайт: `demos/mesto-66949634/index.html`, стили — `styles.css`.
+- Источники, фотографии, ограничения и арт-дирекшен — [PROJECT.md](demos/mesto-66949634/PROJECT.md).
+- 13 пользовательских реальных фото и 7 генераций в `assets/`; в галерее 11 реальных фото, два кадра с неподтверждённой акцией/QR не используются в публичной галерее. Рекламные изображения используются отдельно от фотодокументации кофейни.
+- Городская плотная редакционная подача, жёлтый акцент из реальных фото, адаптивная сетка, карта, контактный телефон и фотогалерея с управлением с клавиатуры.
+- Без цен, выдуманных отзывов и формы заказа; часы и актуальные позиции меню требуют согласования с владельцем. Два юридических уведомления и noindex сохранены.
+
 ## Публикация
 GitHub Pages: \`Settings → Pages → Deploy from a branch → main → /(root)\`.
 - Портфолио: https://mobigametim-bit.github.io/kaliningrad-web-studio/
@@ -49,6 +56,7 @@ GitHub Pages: \`Settings → Pages → Deploy from a branch → main → /(root)
 - Beauty&Health: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/beauty-health-6c2e91/
 - Кузов Калининград: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/kuzov-kaliningrad-78721853/
 - Sun Service: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/sun-service-24576109/
+- Место: https://mobigametim-bit.github.io/kaliningrad-web-studio/demos/mesto-66949634/
 
 Не хранить в публичном репозитории приватную базу контактов, внутреннюю аналитику по лидам или исходные досье. Публичные репозитории и страницы не защищены от копирования.
 
