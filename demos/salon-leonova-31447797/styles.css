@@ -14,3 +14,80 @@
 @media(max-width:760px){.shell{width:calc(100% - 36px)}.section{padding-block:73px}.header-inner{min-height:79px}.brand img{width:210px}.main-nav,.header-cta{display:none}.menu-toggle{display:flex;margin-left:auto;flex-direction:column;justify-content:center;gap:6px;width:44px;height:44px;border:1px solid #bba867;background:transparent;padding:11px}.menu-toggle span{height:1px;width:100%;background:var(--gold)}.mobile-nav:not([hidden]){display:flex;flex-direction:column;gap:0;padding:0 18px 18px;background:var(--dark)}.mobile-nav a{padding:13px 5px;border-top:1px solid #ffffff22;font-size:13px}.hero{grid-template-columns:1fr}.hero-copy{padding:67px 22px 75px}.hero h1{font-size:clamp(3.4rem,9.8vw,5.1rem)}.hero-visual{min-height:500px;max-height:600px}.hero-inset{left:18px;bottom:16px;width:130px}.hero-index{left:22px}.hero-bottom{margin-top:47px}.edition-line .shell{font-size:9px;min-height:48px}.intro{grid-template-columns:1fr}.intro .section-number{grid-column:auto}.intro-image{margin:0;width:min(100%,440px)}.intro-image img{height:450px}.section-heading,.gallery-heading{align-items:start;flex-direction:column;gap:18px}.service-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.service-card:last-child .service-img{height:100%}.service-img{height:310px}.statement-layout{min-height:270px}.statement-star{font-size:120px}.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.gallery-tile.wide{grid-column:auto;aspect-ratio:.83}.detail-block{grid-template-columns:1fr}.detail-img{min-height:380px;height:400px}.detail-copy{padding:70px 23px}.contacts-layout{grid-template-columns:1fr;gap:38px}.address-card{min-height:350px;padding:30px}.site-footer .shell{padding-block:29px;min-height:auto;flex-wrap:wrap;justify-content:flex-start}.legal{padding-block:24px 35px}.concept-notice .shell{align-items:flex-start;flex-direction:column;gap:3px}}
 @media(max-width:460px){.shell{width:calc(100% - 32px)}.brand img{width:174px}.header-inner{min-height:70px}.hero-copy{padding:51px 16px 69px}.hero h1{font-size:clamp(2.9rem,11.3vw,4rem)}.hero-lead{font-size:14px;line-height:1.75}.hero-actions{align-items:flex-start;gap:12px;flex-direction:column}.hero-index{left:16px}.hero-visual{min-height:410px;max-height:440px}.hero-inset{left:16px;bottom:16px;width:min(46%,170px)}.edition-line .shell span:last-child{display:none}.intro-copy h2,.section-heading h2,.gallery-heading h2,.contacts h2,.detail-copy h2{font-size:clamp(2.65rem,11vw,4rem)}.intro-image img{height:370px}.service-grid{grid-template-columns:1fr}.service-card:last-child{display:block;grid-column:auto}.service-card:last-child .service-img,.service-img{height:310px}.service-info p{min-height:0}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.gallery-tile.featured{grid-column:span 2;grid-row:span 1;aspect-ratio:1.4}.gallery-tile.wide{grid-column:auto;aspect-ratio:.83}.gallery-tile span{font-size:9px;bottom:10px;left:10px}.gallery-more-wrap{align-items:start;flex-direction:column}.detail-img{height:330px;min-height:330px}.detail-copy{padding:58px 16px}.contacts-layout{gap:30px}.address-card{padding:22px;min-height:325px}.address-city{margin-top:33px}.address-footer{flex-wrap:wrap}.lightbox{padding:62px 38px 34px}.lightbox-prev,.lightbox-next{width:29px;height:45px;font-size:23px}.lightbox-prev{left:3px}.lightbox-next{right:3px}.lightbox-close{right:12px;top:12px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Compact rhythm: 2026-09-23 */
+.section{padding-block:72px}
+.kicker{margin-bottom:18px}
+.header-inner{min-height:86px;gap:30px}
+.brand img{width:245px}
+.hero{min-height:550px}
+.hero-copy{padding-top:48px;padding-bottom:62px}
+.hero .eyebrow{margin-bottom:21px}
+.hero h1{font-size:clamp(3.3rem,5.2vw,5.6rem);margin-bottom:24px}
+.hero-lead{line-height:1.7;margin-bottom:26px}
+.hero-bottom{margin-top:32px}
+.hero-visual{min-height:550px}
+.edition-line .shell{min-height:44px}
+.intro{gap:30px}
+.intro-copy h2,.section-heading h2,.gallery-heading h2,.contacts h2,.detail-copy h2{font-size:clamp(2.55rem,4.2vw,4.65rem);line-height:1.12}
+.intro-copy>p:not(.kicker){margin:19px 0;line-height:1.7}
+.intro-image{margin-top:13px}
+.intro-image img{height:380px}
+.section-heading,.gallery-heading{gap:32px;margin-bottom:30px}
+.service-img{height:275px}
+.service-info{padding:20px 22px 23px}
+.service-info h3{margin-bottom:8px}
+.service-info p{min-height:50px;margin-bottom:15px}
+.statement-layout{min-height:245px;padding-block:38px}
+.gallery-section{padding-bottom:72px}
+.gallery-heading{margin-bottom:27px}
+.gallery-tile{aspect-ratio:1}
+.gallery-more-wrap{margin-top:22px}
+.detail-block{min-height:430px}
+.detail-img{min-height:430px}
+.detail-copy{padding-top:48px;padding-bottom:48px}
+.detail-copy>p:not(.kicker){margin:18px 0 25px}
+.contacts-layout{gap:48px}
+.contact-intro{margin:18px 0 24px}
+.address-card{min-height:310px;padding:31px}
+.address-city{margin-top:28px}
+.site-footer .shell{min-height:86px}
+.legal{padding-block:20px 38px}
+@media(max-width:1050px){
+  .brand img{width:218px}
+  .detail-copy{padding:45px 35px}
+}
+@media(max-width:760px){
+  .section{padding-block:52px}
+  .header-inner{min-height:72px}
+  .brand img{width:202px}
+  .hero-copy{padding:43px 22px 55px}
+  .hero h1{font-size:clamp(3.1rem,9.2vw,4.8rem)}
+  .hero-bottom{margin-top:27px}
+  .hero-visual{min-height:390px;max-height:470px}
+  .edition-line .shell{min-height:40px}
+  .intro-image{margin-top:0}
+  .intro-image img{height:335px}
+  .service-img{height:250px}
+  .statement-layout{min-height:205px}
+  .detail-img{min-height:290px;height:310px}
+  .detail-copy{padding:48px 23px}
+  .contacts-layout{gap:26px}
+  .address-card{min-height:290px;padding:25px}
+  .site-footer .shell{padding-block:22px;min-height:auto}
+  .legal{padding-block:20px 30px}
+}
+@media(max-width:460px){
+  .header-inner{min-height:66px}
+  .brand img{width:174px}
+  .hero-copy{padding:37px 16px 51px}
+  .hero h1{font-size:clamp(2.9rem,11.3vw,4rem)}
+  .hero-visual{min-height:350px;max-height:390px}
+  .intro-image img{height:290px}
+  .service-card:last-child .service-img,.service-img{height:235px}
+  .detail-img{height:275px;min-height:275px}
+  .detail-copy{padding:43px 16px}
+  .contacts-layout{gap:22px}
+  .address-card{padding:22px;min-height:275px}
+  .address-city{margin-top:23px}
+}
