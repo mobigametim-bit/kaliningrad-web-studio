@@ -1,16 +1,15 @@
 (()=>{'use strict';
 const photoNames=[
-'Снимок экрана 2026-10-02 111322.png','Снимок экрана 2026-10-02 111332.png','Снимок экрана 2026-10-02 111339.png',
-'Снимок экрана 2026-10-02 111347.png','Снимок экрана 2026-10-02 111358.png','Снимок экрана 2026-10-02 111405.png',
-'Снимок экрана 2026-10-02 111417.png','Снимок экрана 2026-10-02 111427.png','Снимок экрана 2026-10-02 111439.png',
 'Снимок экрана 2026-10-02 111446.png','Снимок экрана 2026-10-02 111501.png','Снимок экрана 2026-10-02 111514.png',
 'Снимок экрана 2026-10-02 111524.png','Снимок экрана 2026-10-02 111529.png','Снимок экрана 2026-10-02 111537.png',
 'Снимок экрана 2026-10-02 111543.png','Снимок экрана 2026-10-02 111548.png','Снимок экрана 2026-10-02 111601.png',
-'Снимок экрана 2026-10-02 111609.png','Снимок экрана 2026-10-02 111616.png','Снимок экрана 2026-10-02 111628.png',
-'Снимок экрана 2026-10-02 111642.png','Снимок экрана 2026-10-02 111654.png'
+'Снимок экрана 2026-10-02 111616.png','Снимок экрана 2026-10-02 111628.png','Снимок экрана 2026-10-02 111642.png',
+'Снимок экрана 2026-10-02 111654.png','Снимок экрана 2026-10-02 111258.png','Снимок экрана 2026-10-02 111313.png',
+'Снимок экрана 2026-10-02 111339.png','Снимок экрана 2026-10-02 111417.png','Снимок экрана 2026-10-02 111427.png'
 ];
 const base='assets/originals/';
 const grid=document.getElementById('photoGrid');
+const total=document.getElementById('photoTotal');
 if(grid){
   photoNames.forEach((name,i)=>{
     const button=document.createElement('button');
@@ -23,11 +22,18 @@ if(grid){
     img.alt='Vredina — фото из галереи '+String(i+1);
     img.loading='lazy';
     img.decoding='async';
-    img.addEventListener('error',()=>button.hidden=true,{once:true});
+    img.addEventListener('error',()=>{button.hidden=true;updateTotal()},{once:true});
     button.appendChild(img);
     grid.appendChild(button);
   });
 }
+function updateTotal(){
+  if(!grid||!total)return;
+  const count=[...grid.querySelectorAll('.gallery-item:not([hidden])')].length;
+  total.textContent=count+' '+(count%10===1&&count%100!==11?'фото':'фото');
+}
+updateTotal();
+
 const header=document.querySelector('.site-header');
 const menu=document.querySelector('.menu-button');
 const nav=document.getElementById('main-nav');
@@ -37,6 +43,7 @@ if(header&&menu&&nav){
   nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
   document.addEventListener('click',e=>{if(!header.contains(e.target))close()});
 }
+
 const lightbox=document.getElementById('lightbox');
 if(lightbox&&grid){
   const image=lightbox.querySelector('img');
@@ -47,19 +54,21 @@ if(lightbox&&grid){
   let current=0,returnFocus=null;
   const available=()=>[...grid.querySelectorAll('.gallery-item:not([hidden])')];
   const show=n=>{
-    const items=available(); if(!items.length)return;
+    const items=available();if(!items.length)return;
     current=(n+items.length)%items.length;
     const item=items[current],img=item.querySelector('img');
-    image.src=img.src; image.alt=img.alt;
+    image.src=img.src;image.alt=img.alt;
     counter.textContent=String(current+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0');
   };
   const open=item=>{
-    const items=available(); current=Math.max(0,items.indexOf(item)); returnFocus=item;
+    const items=available();current=Math.max(0,items.indexOf(item));returnFocus=item;
     lightbox.hidden=false;document.body.style.overflow='hidden';show(current);closeBtn.focus();
   };
   const close=()=>{lightbox.hidden=true;document.body.style.overflow='';image.src='';returnFocus?.focus()};
   grid.addEventListener('click',e=>{const item=e.target.closest('.gallery-item');if(item)open(item)});
-  closeBtn.addEventListener('click',close);prev.addEventListener('click',()=>show(current-1));next.addEventListener('click',()=>show(current+1));
+  closeBtn.addEventListener('click',close);
+  prev.addEventListener('click',()=>show(current-1));
+  next.addEventListener('click',()=>show(current+1));
   lightbox.addEventListener('click',e=>{if(e.target===lightbox)close()});
   document.addEventListener('keydown',e=>{if(lightbox.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(current-1);if(e.key==='ArrowRight')show(current+1)});
 }
